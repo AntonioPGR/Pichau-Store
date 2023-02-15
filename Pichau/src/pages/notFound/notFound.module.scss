@@ -1,0 +1,60 @@
+@import 'assets/style/_variables.scss';
+
+.notFoundContainer{
+
+  .errorMsg{
+    text-align: center;
+
+    > *{
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .text{
+      color: $white;
+    }
+
+    h1.text{
+      font-size: 5rem;
+    }
+
+    h2.text{
+      font-size: 2rem;
+    }
+
+    p.text{
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+    }
+
+    .backTo{
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      background-color: $white;
+      color: $lightGray;
+      border-radius: 3px;
+    }
+
+  }
+
+  .errorImage{
+    display: none;
+  }
+
+  @media screen and (min-width:800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .errorMsg{
+      text-align: right;
+    }
+
+    .errorImage{
+      display: block;
+      max-height: 80vh;
+    }
+
+  }
+}

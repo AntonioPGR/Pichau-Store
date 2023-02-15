@@ -1,0 +1,82 @@
+@import 'assets/style/_variables.scss';
+
+.container{
+  padding: 20px;
+  background-color: $bgColorDark;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  > *{
+    margin: 5px;
+  }
+
+}
+
+.logoContainer{
+  width: 20%;
+
+  .logo{
+    width: 100%;
+  }
+}
+
+.socialMediaContainer{
+
+  .list{
+    display: flex;
+    align-items: center;
+
+    .icon{
+      margin-right: 10px;
+    }
+
+  }
+
+  .icon:hover{
+    color: $white;
+    background-color: $darkRed;
+  }
+}
+
+.title{
+  color: $white;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.list{
+  padding-left: 10px;
+
+  .icon {
+    color: $darkRed;
+    background-color: $white;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .text{
+    padding-left: 10px;
+    color: $darkWhite;
+    top: -7px;
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width: 665px) {
+  .container{
+    display: block;
+
+    > *{
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .logoContainer{
+    width: 50%;
+  }
+
+}

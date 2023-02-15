@@ -1,0 +1,33 @@
+@import "assets/style/_variables.scss";
+
+.container{
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.name{
+  margin-right: 5px;
+  padding: 0;
+}
+
+.select{
+  padding: 0;
+  background-color: #00000000;
+  background-color: $darkRed;
+  max-width: 150px;
+}
+
+.select:hover{
+  cursor: pointer;
+}
+
+.select:focus{
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.option{
+  border-radius: 0;
+}
+

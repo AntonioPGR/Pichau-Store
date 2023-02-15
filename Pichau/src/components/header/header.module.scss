@@ -1,0 +1,25 @@
+@import 'assets/style/_variables.scss';
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  padding: 20px;
+  z-index: 10;
+
+  @media screen and (min-width: 1500px) {
+    margin: 20px auto;
+  }
+}
+
+.logoContainer{
+  max-width: 300px;
+  min-width: 70px;
+  margin-right: 20px;
+
+  .logo{
+    margin-right: 10px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "description": "Computador Pichau Gamer, AMD Ryzen 9 5950X, RX 6900 XT 16GB, 16GB DDR4, M.2 240GB + SSD 960GB ",
+    "price": {
+      "from": 20312.00,
+      "to": 15599.90,
+      "installments": 17727.16
+    },
+    "photo": "assets/imgs/pcgamer1.jpg",
+    "id": 1,
+    "category": {
+      "id": 1,
+      "label": "computador"
+    }
+  },
+  {
+    "description": "Computador Pichau Gamer, AMD Ryzen 9 5900X, GeForce  RTX 3070 8GB, 16GB DDR4, SSD M.2 480GB ",
+    "price": {
+      "from": 13116.0,
+      "to": 10399.9,
+      "installments": 11818.07
+    },
+    "photo": "assets/imgs/pcgamer2.jpg",
+    "id": 2,
+    "category": {
+      "id": 1,
+      "label": "computador"
+    }
+  },
+  {
+    "description": " Computador Pichau Gamer, AMD Ryzen 7 5800X, GeForce RTX 2060 12GB, 8GB DDR4, SSD 240GB",
+    "price": {
+      "from": 8997,
+      "to": 6998.0,
+      "installments": 7954.0
+    },
+    "photo": "assets/imgs/pcgamer3.jpg",
+    "id": 3,
+    "category": {
+      "id": 1,
+      "label": "computador"
+    }
+  },
+  {
+    "description": "Computador Pichau Gamer, Intel i3-12100F, GeForce RTX 3050 8GB, 8GB DDR4, SSD 240GB",
+    "price": {
+      "from": 6381.01,
+      "to": 4599.78,
+      "installments": 5227.02
+    },
+    "photo": "assets/imgs/pcgamer4.jpg",
+    "id": 4,
+    "category": {
+      "id": 1,
+      "label": "computador"
+    }
+  },
+  {
+    "description": "Processador Intel Core i5-10400F, 6-Core, 12-Threads, 2.9Ghz (4.3Ghz Turbo), Cache 12MB, LGA1200, BX8070110400F",
+    "price": {
+      "from": 1304.43,
+      "to": 970.9,
+      "installments": 906.7
+    },
+    "photo": "assets/imgs/cpu1.jpg",
+    "id": 5,
+    "category": {
+      "id": 2,
+      "label": "processador"
+    }
+  },
+  {
+    "description": "Processador Intel Core i5-12600KF, 10-Core, 16-Threads, 3.7GHz (4.9GHz Turbo), Cache 20MB, LGA1700, BX8071512600KF",
+    "price": {
+      "to": 2037.9,
+      "installments": 2315.8
+    },
+    "photo": "assets/imgs/cpu2.jpg",
+    "id": 6,
+    "category": {
+      "id": 2,
+      "label": "processador"
+    }
+  },
+  {
+    "description": "Processador Intel Core i9-10940X, 14-Core, 28-Threads, 3.3GHz (4.6GHz Turbo), Cache 19.25MB, LGA2066, BX8069510940X",
+    "price": {
+      "to": 6499.9,
+      "installments": 7386.25
+    },
+    "photo": "assets/imgs/cpu3.jpg",
+    "id": 7,
+    "category": {
+      "id": 2,
+      "label": "processador"
+    }
+  },
+  {
+    "description": "Placa de Video Galax GeForce RTX 3060 1-Click OC, LHR, 12GB, GDDR6, 192-bit, 36NOL7MD1VOC",
+    "price": {
+      "from": 4125.29,
+      "to": 3099.99,
+      "installments": 3522.72
+    },
+    "photo": "assets/imgs/placaDeVideo1.jpg",
+    "id": 8,
+    "category": {
+      "id": 3,
+      "label": "placa de video"
+    }
+  },
+  {
+    "description": "Placa de Video Gigabyte GeForce GTX 1660 Super 6GB Windforce OC 192-bit, GV-N166SOC-6GD",
+    "price": {
+      "to": 2229,
+      "installments": 2612.50
+    },
+    "photo": "assets/imgs/placaDeVideo2.jpg",
+    "id": 9,
+    "category": {
+      "id": 3,
+      "label": "placa de video"
+    }
+  },
+  {
+    "description": "Placa de Video Gainward GeForce RTX 3080 Phantom+, LHR, 10GB, GDDR6, 320-bit, NED3080U19IA-1020M",
+    "price": {
+      "to": 9399.9,
+      "installments": 10681.7
+    },
+    "photo": "assets/imgs/placaDeVideo3.jpg",
+    "id": 10,
+    "category": {
+      "id": 3,
+      "label": "placa de video"
+    }
+  },
+  {
+    "description": "Water Cooler Cooler Master Masterliquid ML360L V2 ARGB, MLW-D36M-A18PA-R2",
+    "price": {
+      "from": 965.8,
+      "to": 679.0,
+      "installments": 772.9
+    },
+    "photo": "assets/imgs/cooler1.jpg",
+    "id": 11,
+    "category": {
+      "id": 4,
+      "label": "cooler"
+    }
+  },
+  {
+    "description": "Cooler Para Processador Cooler Master Hyper 212 ARGB, RR-2V2L-18PA-R1",
+    "price": {
+      "from": 283.98,
+      "to": 209.9,
+      "installments": 238.52
+    },
+    "photo": "assets/imgs/cooler2.jpg",
+    "id": 12,
+    "category": {
+      "id": 4,
+      "label": "cooler"
+    }
+  },
+  {
+    "description": "Water Cooler Cooler Master MasterLiquid ML240 Illusion, RGB, 240mm, MLX-D24M-A18P2-R1",
+    "price": {
+      "from": 1022.61,
+      "to": 689.9,
+      "installments": 727.16
+    },
+    "photo": "assets/imgs/cooler3.jpg",
+    "id": 13,
+    "category": {
+      "id": 4,
+      "label": "cooler"
+    }
+  }
+]

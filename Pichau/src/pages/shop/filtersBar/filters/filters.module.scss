@@ -1,0 +1,42 @@
+@import "assets/style/_variables.scss";
+
+.list{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: center;
+
+  @media screen and (min-width: 765px) {
+    justify-content: space-between;
+  }
+
+}
+
+.filter{
+  background-color: $bgColorLight;
+  margin: 0 10px 10px 0;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.checkBox{
+  display: none;
+}
+
+.checkBox:checked + .name{
+  background-color: $darkRed;
+}
+
+.name{
+  text-transform: capitalize;
+  color: $darkText;
+  width: 130px;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+.name:hover{
+  cursor: pointer;
+}

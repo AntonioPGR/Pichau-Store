@@ -1,0 +1,88 @@
+@import 'assets/style/_variables.scss';
+
+.mediaContainer{
+
+  min-height: 70vh;
+
+  @media screen and (min-width:700px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  margin-bottom: 20px;
+
+}
+
+.backTo{
+  &::before{
+    content: "<";
+    color: $darkRed;
+    margin-right: 5px;
+  }
+
+  font-size: 1.5rem;
+  color: $white;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+}
+
+.imageContainer{
+  padding: 10px;
+  padding-bottom: 0;
+
+  .image{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+}
+
+.descriptionContainer{
+  padding: 5px;
+  padding-top: 0;
+
+  .title{
+    color: $white;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .fullPrice{
+    color: $green;
+    font-size: 2rem;
+  }
+
+  .intallmentPrice::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 10px 0;
+    background-color: $darkRed;
+  }
+
+  .intallmentPrice{
+    color: $darkRed;
+  }
+
+}
+
+.addToCart{
+  display: block;
+  padding: 10px;
+  background-color: $green;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+
+  transition: box-shadow 1s ease;
+  &:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+}

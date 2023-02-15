@@ -1,0 +1,47 @@
+@import 'assets/style/_variables.scss';
+
+.title{
+  font: 500 2rem $titlesFont;
+  color: $white;
+  margin-bottom: 5px;
+
+  .icon{
+    color: $darkRed;
+    height: 22px;
+    position: relative;
+    top: 4px;
+    left: -4px;
+    z-index: -1;
+  }
+
+}
+
+.paragrafhsContainer{
+
+  padding: 0 10px;
+
+  .textParagrafh{
+    color: $white;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin: 20px 0;
+    line-break: strict;
+  }
+}
+
+.imagesContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  .image{
+    margin: 20px;
+    border: 5px solid $darkRed;
+    padding: 10px;
+    border-radius: 2px;
+    max-width: 80vw;
+  }
+
+}

@@ -1,0 +1,17 @@
+@import 'assets/style/_variables.scss';
+
+.title{
+  font: 500 1.5em $titlesFont;
+  color: $white;
+  margin-bottom: 5px;
+
+  .icon{
+    color: $darkRed;
+    height: 22px;
+    position: relative;
+    top: 4px;
+    left: -4px;
+    z-index: -1;
+  }
+
+}

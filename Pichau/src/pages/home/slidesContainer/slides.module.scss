@@ -1,0 +1,65 @@
+@import 'assets/style/_variables.scss';
+
+.slideShow{
+  user-select: none;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.slidesContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 200px);
+
+  .slide{
+    z-index: -1;
+    position: relative;
+    width: 0%;
+    height: 100%;
+    overflow-y: hidden;
+
+    .image{
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .slide.active{
+    width: 100%;
+    left: 0;
+    transition: left 1s;
+  }
+
+  .slideAfter{
+    left: 100%;
+    transition: left 1s;
+  }
+
+  .slideBefore{
+    left: -100%;
+    transition: left 1s;
+  }
+
+}
+
+.arrowsContainer{
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
+  
+  .leftArrow, .rightArrow{
+    cursor: pointer;
+    color: $darkRed;
+    margin: 20px;
+    font-size: 3rem;
+  }
+
+}

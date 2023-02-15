@@ -1,0 +1,198 @@
+@import 'assets/style/_variables.scss';
+
+// CONTAINER
+.navMenu{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navMenuOpen{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+// BACKGROUND
+.blackBG{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+// ICONE
+.menuIcon{
+  position: relative;
+  display: block;
+  padding: 25px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+
+  .hamburguer{
+    display: block;
+    background-color: $darkRed;
+    width: 40px;
+    height: 5px;
+    position: relative;
+
+    
+    &:after, &:before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 40px;
+      background-color: $darkRed;
+      position: relative;
+    }
+
+  }
+
+  transition: box-shadow 0.5s ease-out;
+  &:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+.menuIconClosed{
+
+  .hamburguer{
+
+    &:before{
+      top: -15px;
+    }
+
+    &:after {
+      margin-top: 10px;
+    }
+
+  }
+
+}
+
+.menuIconOpen{
+
+  top: 30px;
+  right: 20px;
+
+  .hamburguer{
+    animation: midBarClosed 0.1s;
+    height: 0;
+
+    &:before{
+      animation: topBarClosed 0.5s;
+      transform: rotate(45deg);
+      top: -2px;
+    }
+
+    &:after {
+      animation: bottomBarClosed 0.5s;
+      top: -17px;
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  @keyframes topBarClosed {
+    from{
+      top: -15px;
+      transform: rotate(0);
+    }
+    to{
+      top: -2px;
+      transform: rotate(45deg);
+    }
+  }
+  @keyframes midBarClosed{
+    from{
+      height: 5px;
+    }
+    to{
+      height: 0px;
+    }
+  }
+  @keyframes bottomBarClosed {
+    from{
+      top: 0px;
+      transform: rotate(0deg);
+    }
+    to{
+      top: -17px;
+      transform: rotate(-45deg);
+    }
+  }
+
+}
+
+// LINKS CONTAINER
+.linksContainerOpen{
+  $maxWidth: 300px;
+
+  position: absolute;
+  height: clamp(300px, 100vh, 100vh);
+  width: 100vw;
+  right: 0px;
+  top: 0px;
+  background-color: $darkGray;
+  z-index: 3;
+  padding-top: 110px;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
+
+  .link{
+    transition: background-color 0.3s;
+  }
+
+  animation: open;
+  animation-duration: 0.5s;
+  @keyframes open {
+    from {
+      width: 0;
+    }
+    to{
+      width: 100vw;
+    }
+  }
+
+  @media screen and (min-width: calc($maxWidth + 100px)) {
+    width: $maxWidth;
+
+    @keyframes open {
+      from {
+        width: 0;
+      }
+      to{
+        width: $maxWidth;
+      }
+    }
+
+  }
+
+}
+
+.linksContainerClosed{
+  width: 0px;
+  height: 0px;
+
+  .link{
+    display: none;
+  }
+}
+
+.link{
+  text-decoration-color: $white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: end;
+  font-size: 1.4rem;
+  user-select: none;
+
+  &:hover{
+    text-decoration: underline;
+    background-color: $lightGray;
+  }
+}

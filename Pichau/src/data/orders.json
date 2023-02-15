@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Maior preço",
+    "id": 1
+  },
+  {
+    "name": "Menor preço",
+    "id": 2
+  },
+  {
+    "name": "Tipo",
+    "id": 3
+  }
+]

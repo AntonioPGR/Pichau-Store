@@ -1,0 +1,42 @@
+@import "assets/style/_variables.scss";
+
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: $bgColorSemiLight;
+
+  > *{
+    background-color: $bgColorSemiLight;
+  }
+}
+
+.input{
+  border: none;
+  height: 40px;
+  width: calc(100vw - 110px);
+}
+
+.input, .input::placeholder{
+  font-size: 1.2em;
+  color: $lightText;
+}
+
+input:focus{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+  color: $lightText;
+}
