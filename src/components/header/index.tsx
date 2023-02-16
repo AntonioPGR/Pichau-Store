@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import { LinksMenu } from './linksMenu';
 
 export function Header(){
-
+  console.log('header');
 
   return(
     <header className={styles.container} >

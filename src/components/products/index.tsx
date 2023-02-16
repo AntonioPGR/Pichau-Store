@@ -1,5 +1,6 @@
 // COMPONENTS:
 import { Product } from 'modules/product';
+import { memo } from 'react';
 import { ProductContainer } from './product';
 
 // STYLE:
@@ -9,7 +10,7 @@ interface PropsProductsList{
   listProducts: Product[] | undefined
 }
 
-export function ProductsList({listProducts}:PropsProductsList){
+function ProductsList({listProducts}:PropsProductsList){
   /**
    * renderiza a lista de produtos passada
    * @returns lista de produtos renderizada de acordo com os filtros
@@ -34,6 +35,8 @@ export function ProductsList({listProducts}:PropsProductsList){
 
   };
 
+  console.log('lista');
+
   return(
     <div className={styles.container}>
       {
@@ -42,3 +45,5 @@ export function ProductsList({listProducts}:PropsProductsList){
     </div>
   );
 }
+
+export default memo(ProductsList);

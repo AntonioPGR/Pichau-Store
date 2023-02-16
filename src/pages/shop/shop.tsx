@@ -1,7 +1,7 @@
 // COMPONENTS
 import { SearchBar } from './searchBar';
 import { FiltersBar } from './filtersBar';
-import { ProductsList } from 'components/products';
+import ProductsList from 'components/products';
 
 // MODULES
 import { useEffect, useState } from 'react';

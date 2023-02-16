@@ -1,5 +1,5 @@
 // COMPONENTS
-import { ProductsList } from 'components/products';
+import ProductsList from 'components/products';
 
 // MODULES
 import { SearchFilter } from 'modules/searchFilter';

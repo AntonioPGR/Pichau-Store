@@ -78,7 +78,6 @@ export class Product{
 
   public navigateToProductPage(navigateFunc:NavigateFunction){
     navigateFunc(`/produto/${this.id}`, {state: this});
-    console.log('navigating');
   }
 
 }

@@ -12,9 +12,11 @@ import productsJson from 'data/products.json';
 
 // EXTERNAL
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
-export function ProductPage(){
+function ProductPage(){
+
+  console.log('produto');
 
   // Funções
   // busca o produto com id correspondente ou undefined caso não haja resultado para busca
@@ -55,8 +57,6 @@ export function ProductPage(){
     return <NotFound />;
   }
 
-  console.log(product);
-
   return(
     <div className={styles.container}>
       <div className={styles.backTo} onClick={()=>navigate(-1)} >Voltar</div>
@@ -78,3 +78,5 @@ export function ProductPage(){
     </div>
   );
 }
+
+export default memo(ProductPage);

@@ -7,7 +7,7 @@ import { NotFound } from 'pages/notFound';
 
 // EXTERNAL
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ProductPage } from 'pages/productPage';
+import ProductPage from 'pages/productPage';
 
 export function AppRoutes(){
   return (
