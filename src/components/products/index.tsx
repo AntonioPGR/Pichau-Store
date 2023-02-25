@@ -35,8 +35,6 @@ function ProductsList({listProducts}:PropsProductsList){
 
   };
 
-  console.log('lista');
-
   return(
     <div className={styles.container}>
       {
